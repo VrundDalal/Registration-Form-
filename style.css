@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin: 10px;
+}
+
+.container {
+    width: 50%;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container div {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.container label {
+    width: 120px;
+    font-weight: bold;
+    margin-right: 10px; 
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"],
+.container select,
+.container textarea {
+    border: 1px solid #ccc;
+    border-radius: 30px; 
+    padding: 10px;
+    height: 45px;
+    flex: 1;
+    font-size: 16px;
+    outline: none;
+}
+
+.container textarea {
+    height: 45px; 
+    resize: none; 
+    overflow-y: auto; 
+    border-radius: 30px; 
+}
+
+.container .gender label,
+.container .hobby label {
+    margin-right: 15px;
+}
+
+.container .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.container .buttons input[type="submit"],
+.container .buttons input[type="reset"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 30px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px; 
+    width: 120px; 
+    height: 45px; 
+}
+
+.container .buttons input[type="reset"] {
+    background-color: #6c757d; 
+}
+
+.container .buttons input[type="submit"]:hover,
+.container .buttons input[type="reset"]:hover {
+    opacity: 0.8;
+}
